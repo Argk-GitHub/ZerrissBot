@@ -59,10 +59,7 @@ async def modhelp(ctx):
                             ,color=0x22a7f0)
     await ctx.send(embed=embed)
     
-@bot.command()
-async def join(ctx):
-  channel = ctx.author.voice.channel
-  await channel.connect()
+
 
 @bot.command()
 async def unban(ctx, *, member):
